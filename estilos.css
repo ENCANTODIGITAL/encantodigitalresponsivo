@@ -163,48 +163,38 @@ nav a {
 }
 /* desde aca empieza la reseña */
 .reasons-to-choose {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:100vh ;
-    background-color: #333;
-    padding: 200px 40px;
-    text-align: left;
-    color: rgb(251, 241, 241);
-    position: relative;
-    z-index: 1;
-    border: 10px solid #000;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  overflow: visible;
+  gap: 30px;
 }
+
+
+
 /* 🎯 Carrusel pequeño: estilos para todos los carruseles mini */
 .mini-carousel-box {
-  width: 500px;
-  height: 800px;
-  margin: 20px auto;
-  position: relative;
-  overflow: hidden;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  width: 100%;
+  margin-top: 20px;
+  display: block;
 }
+
 
 .mini-image-slider {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.mini-slider-img {
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
 }
 
 .mini-slider-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
 }
+
 
 .mini-prev, .mini-next {
   position: absolute;
@@ -252,28 +242,26 @@ nav a {
 
 
 /* Estilos para el texto de los encabezados */
-.reasons-to-choose h2 {
-    font-size: 50px; /* Tamaño de letra para los encabezados */
-    padding:0px 0 40px 40px ;
-    
+.reasons-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
 
-    font-family: "Freeman", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
   
 
 /* Estilos para el texto de los párrafos */
-.reasons-text p {
-    font-size: 24px; /* Tamaño de letra para los párrafos */
-
-   
-    line-height: 1.4; /* Ajusta este valor según tus necesidades */
-    padding: 0px 15px 0px 35px;
-    
-   
-    
+.reasons-text {
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 20px;
+  text-align: center;
 }
+
+    
+   
+    
+
 #reasons-image img {
     max-width: 600px; /* Establece el ancho máximo de la imagen al 100% del contenedor */
 }
@@ -878,5 +866,23 @@ nav a {
   object-fit: cover;
   transform: none;
 }
+.reasons-to-choose {
+  padding: 20px;
+}
+
+.reasons-text h2 {
+  font-size: 24px;
+  padding: 0 10px;
+}
+
+.reasons-text p {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.mini-slider-img img {
+  width: 120px;
+}
+
 
 }
